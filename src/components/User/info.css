@@ -1,0 +1,105 @@
+.container {
+    background: hsla(0, 0%, 100%, 0,7);
+    padding: 1rem;
+}
+
+.paper {
+    width:fit-content;
+    font-size: 1.5rem;
+    font-family: Roboto;
+    background: white;
+    box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: .75em 1em;
+}
+
+.info {
+    list-style-type: none;
+    width:fit-content;
+    min-width: 15em;
+    background: white;
+    font-family: Roboto;
+    background: white;
+    border-radius: 1rem;
+    padding: .75em 1em;
+    box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.25);
+    line-height: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn {  
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: Roboto;
+    background: white;
+    border-radius: 1rem;
+    padding: .75em 1em;
+    box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.25);
+    margin-top: 1em;
+}
+
+.green {
+    background:#38DDD3;
+}
+
+
+.red {
+  background: hsla(0, 92%, 57%, 1);
+  color: white;
+}
+
+ /* unvisited link */
+ .btn:link {
+    color: black;
+  }
+  
+  /* visited link */
+  .btn:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  .btn:hover {
+    color: black;
+  }
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon{
+  width: 1.5em;
+  height: 1.5em;
+}
+
+tr {
+  line-height: 2.5em;
+}
+
+.nav-active {
+  color:red;
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+.nav-active:visited {
+  color:red;
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: Roboto;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: black;
+}

@@ -1,0 +1,19 @@
+.Order-table {
+	float: right;
+	width: 83%;
+	height: 90%;
+	margin-bottom: 30px;
+}
+
+.useService {
+	position: absolute;
+	width: 100%;
+	top: 150px;
+	margin-left: 20px;
+}
+
+.useService p1 {
+	color: #333;
+	font-weight: 500;
+	font-size: 30px;
+}

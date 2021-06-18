@@ -1,0 +1,66 @@
+.app {
+	width: 600px;
+}
+.contain {
+	display: flex;
+	flex-wrap: wrap;
+}
+.chart-container {
+	position: relative;
+	border-radius: 5px;
+	top: 15px;
+	background: #f0f0f0;
+	box-shadow: 5px 5px 13px #bdbdbd, -5px -5px 13px #e9e9e9;
+	width: 43%;
+	left: 20%;
+	justify-content: flex-start;
+}
+.app-pie {
+	width: 300px;
+}
+.chart-pie-container {
+	position: relative;
+	border-radius: 5px;
+	margin-top: 30px;
+	background: #f0f0f0;
+	box-shadow: 5px 5px 13px #bdbdbd, -5px -5px 13px #e9e9e9;
+	width: 43%;
+	left: 20%;
+	justify-content: flex-start;
+}
+
+.total-container {
+	position: relative;
+	border-radius: 5px;
+	margin-top: 15px;
+	background: #f0f0f0;
+	box-shadow: 5px 5px 13px #bdbdbd, -5px -5px 13px #e9e9e9;
+	width: 20%;
+	left: 30%;
+	height: 200px;
+	justify-content: flex-start;
+}
+
+.total-container h4 {
+	margin: 20px 5px 0 12px;
+}
+.total-container h3 {
+	margin: 20px 80px;
+	font-size: 60px;
+}
+.img-chart-container {
+	position: relative;
+	border-radius: 5px;
+	margin-top: 15px;
+	background: #f0f0f0;
+	box-shadow: 5px 5px 13px #bdbdbd, -5px -5px 13px #e9e9e9;
+	width: 18%;
+	left: 30%;
+	height: 210px;
+	justify-content: flex-start;
+}
+
+.img-chart-container img {
+	margin: 15px 0 0 40px;
+	width: 60%;
+}
