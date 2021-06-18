@@ -15,7 +15,7 @@ function Information(){
     const [u, setU] = useState({});
     const user =  AuthService.getCurrentUser();
     useEffect(() => {
-        AdminService.getUser(user.data.id).
+        AdminService.getUser(user.id).
         then((usr) => {
             console.log(usr.data.fullName)
             setU(usr.data)

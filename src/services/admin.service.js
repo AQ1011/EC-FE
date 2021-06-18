@@ -1,7 +1,7 @@
 import axios from 'axios';
 import AuthHeader from "../services/auth-header";
 
-const API_URL = "http://localhost:5000/admin/";
+const API_URL = "https://backend-ec18a007.herokuapp.com/admin/";
 
 class AdminService {
     getUser(id) {
