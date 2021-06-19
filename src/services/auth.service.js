@@ -9,14 +9,15 @@ class AuthService {
           email: username,
           password: password
         })
-        .then(response => {
+        .then(response => {  
+          console.log(response)
           alert(response.data.message)
           if (response.data.data.token) {
             localStorage.setItem("user", JSON.stringify(response.data.data));
           }
           return response.data.data;
         })
-        .catch(error => {          
+        .catch(error => {        
           const resMessage =
           (error.response &&
             error.response.data &&

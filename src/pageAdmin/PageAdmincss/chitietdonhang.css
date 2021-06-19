@@ -1,0 +1,128 @@
+.main-chitiet__cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 70px;
+	gap: 58px;
+	margin: 20px 32px;
+}
+
+.main-chitiet__containerr {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.text-chitiet-primary {
+	color: red;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+}
+
+.text-chitiet-primary-p {
+	color: red;
+	margin-top: -5px;
+}
+
+.card-chitiet {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 150px;
+	width: 250px;
+	padding: 25px;
+	border-radius: 5px;
+	background: #ffffff;
+	box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #e9e9e9;
+}
+
+.card-chitiet_inner > span {
+	font-size: 25px;
+}
+.main-chitiet__container {
+	display: flex;
+	justify-content: center;
+}
+
+.diachi {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-chitiet_inner h5 {
+	font-size: 13px;
+}
+
+.user-detail {
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.cart-sanpham {
+	float: right;
+	width: 83%;
+	height: 100%;
+}
+
+.cart-sanpham hr {
+	border-top: 1px solid #333;
+}
+
+.cart-sanpham-list {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	margin-left: 0px;
+	margin-top: 30px;
+	align-items: center;
+}
+
+.cart-sanpham-item img {
+	object-fit: contain;
+	width: 90px;
+}
+
+.cart-sanpham-item p {
+	font-text: 14px;
+}
+
+.cart-sanpham-td {
+	float: right;
+	background: #b8a9a9;
+	width: 83%;
+	height: 50px;
+	line-height: 1px;
+	margin-bottom: 10px;
+}
+
+.cart-sanpham-list-td {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	margin-left: 0px;
+	margin-top: 30px;
+	align-items: center;
+}
+.cart-sanpham-item-td p {
+	font-size: 15px;
+	color: rgb(99, 44, 44);
+}
+
+.cart-sanpham-total {
+	float: right;
+	background: #cccbcb;
+	width: 83%;
+	height: 200px;
+}
+
+.text-chitiet-primary-money {
+	font-size: 40px;
+	float: right;
+	color: rgb(151, 10, 10);
+}
+
+.btn-back {
+	position: relative;
+	left: 18%;
+	top: 10px;
+}

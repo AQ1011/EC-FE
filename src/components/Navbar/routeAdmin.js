@@ -6,6 +6,7 @@ import OrderManagement from '../../pageAdmin/Order-Management';
 import ServicePackManagement from '../../pageAdmin/ServicePack-Management';
 import ShippingCompany from '../../pageAdmin/Shipping-Company';
 import Statistical from '../../pageAdmin/Statistical';
+import Chitietdonhang from '../../pageAdmin/Chitietdonhang';
 function AppAdmin() {
   return (
     <>
@@ -17,7 +18,8 @@ function AppAdmin() {
             <Route path="/Admin/order-Management" component={OrderManagement} />
             <Route path="/Admin/servicePack-Management" component={ServicePackManagement} />
             <Route path="/Admin/shipping-Company" component={ShippingCompany} /> 
-            <Route path="/Admin/statistical" component={Statistical} />
+          <Route path="/Admin/statistical" component={Statistical} />
+          <Route path="/Admin/order-Management/chitietdonhang" component={Chitietdonhang} />
         </Switch>
       </Router>
     </>

@@ -4,14 +4,8 @@
 	height: 50px;
 }
 
-.MuiAppBar-positionFixed a {
-	color: #fff !important;
-	text-decoration: none !important;
-}
-
 .route-status {
 	top: 50px;
 	position: relative;
 	align-items: center;
-	margin-right: 10px;
 }

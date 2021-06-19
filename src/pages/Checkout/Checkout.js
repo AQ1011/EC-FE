@@ -8,17 +8,25 @@ import Paypal from '../../components/Paypal'
 
 import AuthService from "../../services/auth.service";
 import AdminService from "../../services/admin.service";
-
+import PackageService from "../../services/package.service";
 
 const Checkout = () => {
 
     const [loaded, setLoaded] = useState(false);
-    let paypalRef = useRef();
-
+    const [tong, setTong] = useState(0);
+    const nguoiGui = AuthService.getCurrentUser();
+    const [nguoiNhan, setNguoiNha] = useState('');
+    const [sdt, setSdt] = useState(0);
+    const [noiNhanHang, setNoiNhanHang] = useState('');
+    const [noiGiaoHang, setnoiGiaoHang] = useState('');
+    const [chiPhi, setChiPhi] = useState(0);
+    const [khoiLuong, setKhoiLuong] = useState(0);
+    const [tenLoaiHang, setTenLoaiHang] = useState('');
+  
     const [u, setU] = useState({});
     const user =  AuthService.getCurrentUser();
     useEffect(() => {
-        AdminService.getUser(user.data.id).
+        AdminService.getUser(user.id).
         then((usr) => {
             console.log(usr.data.fullName)
             setU(usr.data)
@@ -44,6 +52,11 @@ const Checkout = () => {
             e.preventDefault();
             return;
         }
+    }
+
+    function confirm() {
+        alert("Tổng tiền: " + tong);
+        
     }
 
     return (
@@ -119,9 +132,8 @@ const Checkout = () => {
                 <div class="confirm">
                     <div class="line-detail"><p>Phí vận chuyển</p> <p>20.000 VND</p></div>
                     <div class="line-detail"><p>Giảm giá</p> <p>20.000 VND</p></div>
-                    <div class="line-detail"><p>Tổng thanh toán</p> <p>0 VND</p></div>
-                    <button class="btn-confirm">Xác nhận</button>
-                    <Paypal/> 
+                    <div class="line-detail"><p>Tổng thanh toán</p> <p>{tong} VND</p></div>
+                    <button class="btn-confirm" onClick={confirm}>Xác nhận</button>
                 </div>
             </div>
             </Container>

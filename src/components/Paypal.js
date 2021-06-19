@@ -39,7 +39,7 @@ export default function Paypal(props) {
     },[loaded]);
 
     return (
-        <div ref={paypalRef}><h1>pay</h1></div>
+        <div ref={paypalRef}></div>
     )
 }
 
